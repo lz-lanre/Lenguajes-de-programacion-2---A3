@@ -1,0 +1,11 @@
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\bin\Debug\LuisZavala_A2.exe.config
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\bin\Debug\LuisZavala_A2.exe
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\bin\Debug\LuisZavala_A2.pdb
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\obj\Debug\LuisZavala_A2.csproj.AssemblyReference.cache
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\obj\Debug\LuisZavala_A2.LuisZavala_A3.resources
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\obj\Debug\LuisZavala_A2.Properties.Resources.resources
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\obj\Debug\LuisZavala_A2.csproj.GenerateResource.cache
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\obj\Debug\LuisZavala_A2.csproj.CoreCompileInputs.cache
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\obj\Debug\LuisZavala_A2.exe
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\obj\Debug\LuisZavala_A2.pdb
+C:\Users\zaval\OneDrive\Escritorio\Documentos Carrera\15. lenguaje de programacion 2\LuisZavala_A2\LuisZavala_A2\obj\Debug\LuisZavala_A2.exe.config
