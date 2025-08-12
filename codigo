@@ -1,0 +1,75 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
+
+namespace LuisZavala_A2
+{
+    public partial class LuisZavala_A3 : Form
+    {
+        string connectionString = ConfigurationManager.ConnectionStrings["ConexionBD"].ConnectionString;
+
+        public LuisZavala_A3()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            CargarDatos();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "INSERT INTO Empleados (Nombre, Apellido_Paterno, Apellido_Materno, Fecha_Nacimiento, RFC, work_place, Puesto, Directivo) " +
+                               "VALUES (@Nombre, @ApellidoPaterno, @ApellidoMaterno, @FechaNacimiento, @RFC, @CentroTrabajo, @Puesto, @Directivo)";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@Nombre", txtNombre.Text);
+                cmd.Parameters.AddWithValue("@ApellidoPaterno", txtApellidoPaterno.Text);
+                cmd.Parameters.AddWithValue("@ApellidoMaterno", txtApellidoMaterno.Text);
+                cmd.Parameters.AddWithValue("@FechaNacimiento", txtFechaNacimiento.Text);
+                cmd.Parameters.AddWithValue("@RFC", txtRFC.Text);
+                cmd.Parameters.AddWithValue("@CentroTrabajo", txtCentroTrabajo.Text);
+                cmd.Parameters.AddWithValue("@Puesto", int.Parse(txtPuesto.Text));
+                cmd.Parameters.AddWithValue("@Directivo", txtDirectivo.Text);
+
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+
+                MessageBox.Show("Registro guardado correctamente");
+                CargarDatos();
+            }
+        }
+        private void CargarDatos()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Empleados", conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
+}
